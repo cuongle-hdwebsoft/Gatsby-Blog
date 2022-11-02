@@ -2,6 +2,10 @@ import React from "react";
 import Layout from "./src/components/Layout";
 import "bootstrap/dist/css/bootstrap.css";
 import "./assets/scss/index.scss";
+import { Provider } from "react-redux";
+import store from "./src/redux/index";
+
+console.log("store", store, window);
 
 // Logs when the client route changes
 export const onRouteUpdate = ({ location, prevLocation }) => {
@@ -11,5 +15,9 @@ export const onRouteUpdate = ({ location, prevLocation }) => {
 
 // Wraps every page in a component
 export const wrapPageElement = ({ element, props }) => {
-  return <Layout {...props}>{element}</Layout>;
+  return (
+    <Provider store={store}>
+      <Layout {...props}>{element}</Layout>
+    </Provider>
+  );
 };

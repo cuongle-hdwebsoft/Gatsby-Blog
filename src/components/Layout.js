@@ -1,4 +1,5 @@
 import { Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
 
 export default function Layout({ children }) {
@@ -6,7 +7,15 @@ export default function Layout({ children }) {
     <div>
       <header className="header">
         <nav>
-          <ul className="d-flex header__menu">
+          <ul className="d-flex header__menu align-items-center">
+            <li className="header__item">
+              <StaticImage
+                style={{ width: 30, height: 30 }}
+                className="mx-2"
+                src="../images/icon.png"
+                alt="logo"
+              ></StaticImage>
+            </li>
             <li className="header__item">
               <Link
                 className="header__link"
