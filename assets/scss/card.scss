@@ -1,0 +1,13 @@
+.card {
+  cursor: pointer;
+
+  &__title {
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+
+    height: 36px;
+    margin-bottom: 10px;
+  }
+}

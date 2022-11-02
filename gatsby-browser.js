@@ -5,8 +5,6 @@ import "./assets/scss/index.scss";
 import { Provider } from "react-redux";
 import store from "./src/redux/index";
 
-console.log("store", store, window);
-
 // Logs when the client route changes
 export const onRouteUpdate = ({ location, prevLocation }) => {
   // console.log("new pathname", location.pathname);

@@ -10,7 +10,7 @@ export default function Layout({ children }) {
           <ul className="d-flex header__menu align-items-center">
             <li className="header__item">
               <StaticImage
-                style={{ width: 30, height: 30 }}
+                style={{ width: 25, height: 25 }}
                 className="mx-2"
                 src="../images/icon.png"
                 alt="logo"

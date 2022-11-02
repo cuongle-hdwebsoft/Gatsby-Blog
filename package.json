@@ -16,6 +16,8 @@
     "db": "json-server --watch db.json --port 3001"
   },
   "dependencies": {
+    "@gatsbyjs/reach-router": "^1.3.9",
+    "axios": "^1.1.3",
     "bootstrap": "^5.2.2",
     "gatsby": "^4.24.6",
     "gatsby-plugin-image": "^2.24.0",
@@ -24,6 +26,7 @@
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-redux": "^8.0.4",
-    "redux": "^4.2.0"
+    "redux": "^4.2.0",
+    "redux-saga": "^1.2.1"
   }
 }
