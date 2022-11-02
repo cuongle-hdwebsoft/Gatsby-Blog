@@ -1,0 +1,26 @@
+.header {
+  background-color: #111;
+  list-style: none;
+
+  &__menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__link {
+    padding: 12px 10px;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+
+    &:hover {
+      opacity: 0.5;
+      color: #fff;
+    }
+
+    &--active {
+      font-weight: 900;
+    }
+  }
+}

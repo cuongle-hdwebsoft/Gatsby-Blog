@@ -8,14 +8,19 @@
     "gatsby"
   ],
   "scripts": {
-    "develop": "gatsby develop",
+    "dev": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "db": "json-server --watch db.json --port 3001"
   },
   "dependencies": {
+    "bootstrap": "^5.2.2",
     "gatsby": "^4.24.6",
+    "gatsby-plugin-image": "^2.24.0",
+    "gatsby-plugin-sass": "^5.24.0",
+    "gatsby-plugin-sharp": "^4.24.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0"
   }
