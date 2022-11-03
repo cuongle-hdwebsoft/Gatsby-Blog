@@ -4,6 +4,8 @@ import CardProduct from "../../components/CardProduct";
 import { GET_LIST_BLOG } from "../../redux/actions";
 import { MODULE_BLOG } from "../../redux/blog/reducer";
 
+// Chỗ này mình đang code CSR
+
 export default function BlogList() {
   const dipatch = useDispatch();
   const [page] = useState(0);
