@@ -39,6 +39,8 @@ https://www.gatsbyjs.com/docs/how-to/querying-data/using-gatsby-without-graphql/
 
 https://github.com/gatsbyjs/gatsby/tree/master/examples/using-redux
 
+https://stackoverflow.com/questions/65537272/gatsby-theres-not-a-page-yet-at
+
 ## Hình ảnh SSG 1 số page
 
 ![alt](./docs/Screenshot%202022-11-03%20142056.png)

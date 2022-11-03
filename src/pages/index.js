@@ -1,10 +1,11 @@
 import { StaticImage } from "gatsby-plugin-image";
 import React from "react";
+import Layout from "../components/Layout";
 import Seo from "../components/Seo";
 
 export default function Index() {
   return (
-    <>
+    <Layout>
       <h1 className="mb-4 fw-bold">Homepage</h1>
       <StaticImage
         src="https://images.unsplash.com/photo-1667309772953-3ef528f5858d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
@@ -42,7 +43,7 @@ export default function Index() {
           Redux saga
         </li>
       </ul>
-    </>
+    </Layout>
   );
 }
 

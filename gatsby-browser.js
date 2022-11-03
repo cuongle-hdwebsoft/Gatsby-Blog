@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import "./assets/scss/index.scss";
 import { Provider } from "react-redux";
 import store from "./src/redux/index";
+import AuthProvider from "./src/components/AuthProvider";
 
 // Logs when the client route changes
 export const onRouteUpdate = ({ location, prevLocation }) => {
@@ -13,9 +14,11 @@ export const onRouteUpdate = ({ location, prevLocation }) => {
 
 // Wraps every page in a component
 export const wrapPageElement = ({ element, props }) => {
+  console.log("props", props);
+
   return (
     <Provider store={store}>
-      <Layout {...props}>{element}</Layout>
+      <AuthProvider>{element}</AuthProvider>
     </Provider>
   );
 };

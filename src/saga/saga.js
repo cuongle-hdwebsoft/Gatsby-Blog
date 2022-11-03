@@ -4,6 +4,7 @@ import {
   GET_LIST_BLOG_FAILED,
   GET_LIST_BLOG_START,
   GET_LIST_BLOG_SUCCESS,
+  // LOGIN,
 } from "../redux/actions";
 
 import axios from "axios";
@@ -33,6 +34,14 @@ function* getListBlog(action) {
     yield put({ type: GET_LIST_BLOG_FAILED });
   }
 }
+
+// function* login() {
+//   yield delay(500);
+// }
+
+// function* watchAuth() {
+//   yield takeLatest(LOGIN, login);
+// }
 
 function* watchBlog() {
   yield takeLatest(GET_LIST_BLOG, getListBlog);

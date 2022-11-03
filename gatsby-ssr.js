@@ -1,9 +1,9 @@
 import React from "react";
-import Layout from "./src/components/Layout";
 import "bootstrap/dist/css/bootstrap.css";
 import "./assets/scss/index.scss";
 import { Provider } from "react-redux";
 import store from "./src/redux/index";
+import AuthProvider from "./src/components/AuthProvider";
 
 // // Adds a class name to the body element
 // export const onRenderBody = ({ setBodyAttributes }, pluginOptions) => {
@@ -13,11 +13,9 @@ import store from "./src/redux/index";
 // };
 
 export const wrapPageElement = ({ element, props }) => {
-  console.log("server side rendering");
-
   return (
     <Provider store={store}>
-      <Layout {...props}>{element}</Layout>
+      <AuthProvider>{element}</AuthProvider>
     </Provider>
   );
 };

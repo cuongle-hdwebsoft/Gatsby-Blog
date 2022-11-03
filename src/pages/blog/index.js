@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import CardProduct from "../../components/CardProduct";
+import Layout from "../../components/Layout";
 import { GET_LIST_BLOG } from "../../redux/actions";
 import { MODULE_BLOG } from "../../redux/blog/reducer";
 
@@ -19,20 +20,23 @@ export default function BlogList() {
   }, [dipatch, limit, page]);
 
   return (
-    <div>
+    <Layout>
       <h1 className="fw-bold">Blog list</h1>
 
       <div className="row">
         {blogs
           ? blogs.map((blog) => {
               return (
-                <div className="col-12 col-sm-6 col-md-4 col-lg-3">
-                  <CardProduct item={blog} key={blog.id}></CardProduct>
+                <div
+                  key={blog.id}
+                  className="col-12 col-sm-6 col-md-4 col-lg-3"
+                >
+                  <CardProduct item={blog}></CardProduct>
                 </div>
               );
             })
           : null}
       </div>
-    </div>
+    </Layout>
   );
 }
