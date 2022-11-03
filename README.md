@@ -1,5 +1,49 @@
 # Gatsby Blog
 
+## Test & demo
+
+```
+git clone https://github.com/cuongle-hdwebsoft/Gatsby-Blog.git
+```
+
+```
+cd Gatsby-Blog
+```
+
+### Start server
+
+```
+npm run db
+```
+
+### Start web
+
+```
+npm run build && npm run serve
+```
+
+## Code
+
+```
+git clone https://github.com/cuongle-hdwebsoft/Gatsby-Blog.git
+```
+
+```
+cd Gatsby-Blog
+```
+
+### Start server
+
+```
+npm run db
+```
+
+### Start web
+
+```
+npm run clean && npm run dev
+```
+
 ## Giới thiệu
 
 - Gatsby là một thư viện được build trên bằng cách dùng React. Điểm mạnh của nó là chúng ta có thể SSG (Static Site Generator) về phần này NextJs cũng có các bạn có thể tìm hiểu thêm. SSG nghĩa là website sẽ build ra html 1 số phần không thay đổi trước lúc build time khi người dùng truy cập trang website thì sẽ gửi html đã được build sẵn từ trên server về giúp tiết kiệm thời gian chờ.
@@ -43,13 +87,23 @@ https://stackoverflow.com/questions/65537272/gatsby-theres-not-a-page-yet-at
 
 ## Hình ảnh SSG 1 số page
 
-![alt](./docs/Screenshot%202022-11-03%20142056.png)
+![alt](./docs/Screenshot%202022-11-03%20182438.png)
 
-![alt](./docs/Screenshot%202022-11-03%20142458.png)
+![alt](./docs/Screenshot%202022-11-03%20182454.png)
 
-![alt](./docs/Screenshot%202022-11-03%20142512.png)
+![alt](./docs/Screenshot%202022-11-03%20182508.png)
 
-![alt](./docs/Screenshot%202022-11-03%20142558.png)
+![alt](./docs/Screenshot%202022-11-03%20182520.png)
+
+![alt](./docs/Screenshot%202022-11-03%20182537.png)
+
+![alt](./docs/Screenshot%202022-11-03%20182551.png)
+
+![alt](./docs/Screenshot%202022-11-03%20182634.png)
+
+![alt](./docs/Screenshot%202022-11-03%20182656.png)
+
+![alt](./docs/Screenshot%202022-11-03%20182720.png)
 
 ## Cách mình learn cái này
 
