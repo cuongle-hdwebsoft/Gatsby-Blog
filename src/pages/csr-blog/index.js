@@ -6,7 +6,7 @@ import { MODULE_BLOG } from "../../redux/blog/reducer";
 
 export default function BlogList() {
   const dipatch = useDispatch();
-  const [page, setPage] = useState(0);
+  const [page] = useState(0);
   const [limit] = useState(8);
   const blogs = useSelector((state) => state[MODULE_BLOG].blogs);
 
@@ -14,7 +14,7 @@ export default function BlogList() {
 
   useEffect(() => {
     dipatch({ type: GET_LIST_BLOG, payload: { _page: page, _limit: limit } });
-  }, []);
+  }, [dipatch, limit, page]);
 
   return (
     <div>
